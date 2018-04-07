@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}
+{{ object.shortcode }} | {{ block.super }} 
+{% endblock title %}
+
+{% block content %}
+<div class=''>
+    <h1>Success!</h1>
+
+    <p>{{ object.url }}</p>
+
+    <p><a class='btn btn-link' href='http://127.0.0.1:8000/{{ object.shortcode }}'>{{ object.shortcode }}</a></p>
+    <a class='btn btn-default'  href='/home'>+ New</a>
+</div>
+{% endblock content %}
