@@ -10,4 +10,5 @@ class URLSerializer(ModelSerializer):
             "url",
             "shortcode",
             "count",
+            "short_url"
         ]
